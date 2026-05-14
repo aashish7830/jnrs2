@@ -40,15 +40,15 @@ html, body {
 
 .video-box {
     position: relative;
-    width: 80%; /* Video ki width thodi kam ki screen par center dikhne ke liye */
-    max-width: 900px; /* Laptop par bahut bada na dikhe */
+    width: 83%; /* Video ki width thodi kam ki screen par center dikhne ke liye */
+     /* Laptop par bahut bada na dikhe */
     margin: 0 auto; /* Center alignment */
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     
     /* Yaha se aap height control kar sakte hain */
-    height: 450px; /* Aap is value ko 300px ya 400px karke check kar sakte hain */
+    height: 600px; /* Aap is value ko 300px ya 400px karke check kar sakte hain */
 }
 
 .video-box video {
@@ -226,7 +226,7 @@ header {
 /* SLIDE */
 .slide{
     position: absolute;
-    top:1rem;
+    /* top:1rem; */
     left: 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -699,7 +699,7 @@ header {
 
 /* --- Section 2: Hotel Facilities (Combined & Professional) --- */
 .facilities-section {
-    padding: 60px 5%; 
+    padding: 60px 6%; 
     text-align: center;
     background-color:#F1EDE4;
     margin-top: 0;
@@ -729,7 +729,7 @@ header {
 .facilities-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 40px 20px;
+    gap: 40px 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -738,7 +738,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px !important;
 }
 
 .fac-icon {
@@ -869,9 +869,19 @@ header {
     padding: 60px 80px;
     display: flex;
     flex-direction: column;
+    text-align:center;
+    align-items: center;
     justify-content: center;
 }
 
+.ks{
+    color:rgb(7, 99, 170);
+}
+.ks1{
+    font-weight:600;
+    color:black;
+    /* font-size:20px; */
+}
 /* Alternating Layout Logic */
 .attraction-row.reverse {
     flex-direction: row-reverse;
@@ -1357,7 +1367,7 @@ header {
             
             /* Background Image Logic */
             background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
-                        url('../images/form-image.png'); 
+                        url('../images/deluxe.png'); 
             background-size: cover;
             background-position: center;
             
