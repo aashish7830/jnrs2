@@ -107,6 +107,7 @@ header {
     color: #e67e22; 
     margin-left: 10px; /* Logo aur text ke beech gap */
     font-weight: 700;
+    font-size:40px;
 }
 /* --- Logo Section End --- */
 
@@ -366,9 +367,7 @@ header {
 }
 
 /* --- Left Side: Text --- */
-.content-side-1 {
-    flex: 1;
-}
+ 
 
 .sub-heading-1 {
     text-transform: uppercase;
@@ -399,8 +398,8 @@ header {
 .reservation-box-1 {
     display: flex;
     align-items: center;
-    margin-right:12rem;
-     margin-bottom:-5rem;
+    /* margin-right:12rem; */
+     /* margin-bottom:-5rem; */
     gap: 15px;
 }
 
@@ -436,31 +435,23 @@ header {
 
 
 /* --- Right Side: Images Section --- */
-.image-side-1 {
-    flex: 1;
-    display: flex;
-    gap: 20px;
-    align-items: flex-start; /* Isse upar wali image top se chipki rahegi */
-}
+ 
 
-.img-wrapper-tall, .img-wrapper-short {
-    width: 50%;
+.img-wrapper-tall {
+    width: 100%;
     overflow: hidden;
-    border-radius: 1px; /* Thoda zyada round professional lagta hai */
+    border-radius: 6px; /* Thoda zyada round professional lagta hai */
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
 /* 1. LEFT IMAGE: Ise niche karne ke liye */
 .img-wrapper-tall {
-    margin-top: 80px; /* Isse left image niche ho jayegi */
+    margin-top: 10px; /* Isse left image niche ho jayegi */
 }
 
-/* 2. RIGHT IMAGE: Ise upar karne ke liye margin 0 karein */
-.img-wrapper-short {
-    margin-top: 0; 
-}
+ 
 
-.img-tall-1, .img-large-1 {
+.img-tall-1{
     width: 100%;
     height: 380px; /* Size thoda aur compact kiya professional look ke liye */
     object-fit: cover;
@@ -499,17 +490,10 @@ header {
         text-align: center; 
     }
 
-    .image-side-1 {
-        width: 100%;
-        display: flex; /* Images ko side-by-side rakhega */
-        gap: 15px;
-        margin-top: 40px;
-        justify-content: center;
-        align-items: flex-start; /* Isse alignment top se start hogi */
-    }
+     
     
-    .img-wrapper-tall, .img-wrapper-short {
-        width: 45%; /* Mobile par dono images side-by-side aayengi */
+    .img-wrapper-tall{
+        width: 100%; /* Mobile par dono images side-by-side aayengi */
     }
 
     /* LEFT IMAGE: Mobile par bhi niche rahegi */
@@ -522,8 +506,8 @@ header {
         margin-top: 0;
     }
     
-    .img-tall-1, .img-large-1 {
-        height: 250px; /* Mobile par height thodi kam taaki screen par fit aaye */
+    .img-tall-1{
+        height: 100%; /* Mobile par height thodi kam taaki screen par fit aaye */
     }
     
     .reservation-box-1 { 
@@ -572,14 +556,13 @@ header {
     .image-side-1 {
         width: 100%;
         display: flex; 
-        gap: 15px;
-        margin-top: 40px;
+        
         justify-content: center;
         align-items: flex-start; 
     }
     
-    .img-wrapper-tall, .img-wrapper-short {
-        width: 48%; 
+    .img-wrapper-tall{
+        width: 100%; 
     }
 
     .img-wrapper-tall {
@@ -590,7 +573,7 @@ header {
         margin-top: 0;
     }
     
-    .img-tall-1, .img-large-1 {
+    .img-tall-1{
         height: 280px; 
     }
 }
@@ -874,14 +857,7 @@ header {
     justify-content: center;
 }
 
-.ks{
-    color:rgb(7, 99, 170);
-}
-.ks1{
-    font-weight:600;
-    color:black;
-    /* font-size:20px; */
-}
+ 
 /* Alternating Layout Logic */
 .attraction-row.reverse {
     flex-direction: row-reverse;
